@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        p{
+            text-align:center;
+        }
+        p{
+            text-align:center;
+        }
+        
+    </style>
+<script>
+    function add()
+    {
+        d=Number(document.getElementById("v1").value);
+        p=Number(document.getElementById("v2").value);
+        s=document.getElementById("h1").innerHTML=d+p;
+    }
+    function sub()
+    {
+        d=Number(document.getElementById("v1").value);
+        p=Number(document.getElementById("v2").value);
+        s=document.getElementById("h1").innerHTML=d-p;
+    }
+    function mul()
+    {
+        d=Number(document.getElementById("v1").value);
+        p=Number(document.getElementById("v2").value);
+        s=document.getElementById("h1").innerHTML=d*p;
+    }
+    function div()
+    {
+        d=Number(document.getElementById("v1").value);
+        p=Number(document.getElementById("v2").value);
+        s=document.getElementById("h1").innerHTML=d/p;
+    }
+    </script>
+</head>
+<body>
+    <br>
+    <br>
+    <p>
+  <input type="text" id="v1" placeholder="Enter a number">&nbsp;
+
+  <input type="text" id="v2" placeholder="Enter a number"><br><br>
+</p>
+
+<center>
+<button onclick="add()" type="button" class="btn btn-primary">ADD</button>
+<button onclick="sub()" type="button" class="btn btn-success">SUB</button>
+<button onclick="mul()" type="button" class="btn btn-danger">MUL</button>
+<button onclick="div()" type="button" class="btn btn-warning">DIV</button>
+
+<h1 id="h1"></h1>
+</center>
+</body>
+
+</html>
