@@ -277,3 +277,215 @@ Enter the value:
 
 3 4 5 6 7
 */
+
+
+
+
+/*11.
+Scanner s= new Scanner(System.in);
+System.out.println("Enter the value:");
+int a=s.nextInt();
+ int n = a;
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j < n; j++){
+                System.out.print(" ");
+}
+            for (int k = 1; k <= (2 * i - 1); k++)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}
+Output:
+Enter the value:
+6
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+*/
+
+
+
+
+
+/*12.
+Scanner s= new Scanner(System.in);
+System.out.println("Enter the value:");
+int a=s.nextInt();
+  int n = a;
+for (int i = 1; i <= n; i++) {
+            for (int j = i; j < n; j++) {
+                System.out.print(" " + " ");
+            }
+            for (int j = 1; j <= (2 * i - 1); j++) {
+                System.out.print("*" + " ");
+            }
+            System.out.println( );
+        }
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = n; j > i; j--) {
+                System.out.print(" " + " ");
+            }
+            for (int j = 1; j <= (2 * i - 1); j++) {
+                System.out.print("*" + " ");
+            }
+            System.out.println( );
+        }
+    }
+}
+Output:
+Enter the value:
+3
+    *
+  * * *
+* * * * *
+  * * *
+    *
+*/
+
+
+
+
+
+/*13.
+Scanner s= new Scanner(System.in);
+System.out.println("Enter the value:");
+int a=s.nextInt();
+int n = a;
+ for (int i = 1; i <= n; i++) {
+for (int j = 1; j <= n; j++) {
+ if (i == 1 || i == n || j == 1 || j == n)
+System.out.print("* ");
+ else
+ System.out.print("  ");
+}
+System.out.println();
+}
+}
+}
+Output:
+Enter the value:
+5
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+*/
+
+
+
+
+
+/*14.
+Scanner s= new Scanner(System.in);
+System.out.println("Enter the value:");
+int a=s.nextInt();
+int n = a;
+ int mid = n / 2;
+ for (int i = 0; i < n; i++) {
+  for (int j = 0; j < n; j++) {
+  if (i == mid || j == mid) {
+  System.out.print("*");
+  } else {
+ System.out.print(" ");
+ }
+ }
+System.out.println( );
+}
+}
+}
+Output:
+Enter the value:
+5
+  *
+  *
+*****
+  *
+  *
+*/
+
+
+
+
+/*15.
+Scanner s= new Scanner(System.in);
+System.out.println("Enter the value:");
+int a=s.nextInt();
+int n = a;
+ for (int i = 1; i <= n; i++)
+ {
+ for (int j = 1; j <= n; j++)
+{
+ if (j == i || j == n - i + 1)
+System.out.print("*");
+else
+System.out.print(" ");
+}
+System.out.println();
+ }
+}
+}
+Output:
+Enter the value:
+10
+*        *
+ *      *
+  *    *
+   *  *
+    **
+    **
+   *  *
+  *    *
+ *      *
+*        *
+*/
+
+
+
+
+/*16.
+Scanner s= new Scanner(System.in);
+System.out.println("Enter the value:");
+int a=s.nextInt();
+ int n = a;
+for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i - 1; j++)
+                System.out.print(" ");
+            System.out.print("*");
+           if (i != 0) {
+                for (int j = 0; j < 2 * i - 1; j++)
+                    System.out.print(" ");
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+for (int i = n - 2; i >= 0; i--) {
+            for (int j = 0; j < n - i - 1; j++)
+                System.out.print(" ");
+             System.out.print("*");
+            if (i != 0) {
+                for (int j = 0; j < 2 * i - 1; j++)
+                    System.out.print(" ");
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+Output:
+Enter the value:
+5
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+*/
